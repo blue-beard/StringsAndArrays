@@ -9,7 +9,7 @@ public class StatsServiceTest {
     public void shouldCalculateSum() {
 
         StatsService service = new StatsService();
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 180;
         int actual = service.summary(sales);
@@ -22,7 +22,7 @@ public class StatsServiceTest {
     public void shouldCalculateAverage() {
 
         StatsService service = new StatsService();
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 15;
         int actual = service.calcAverage(sales);
@@ -35,7 +35,7 @@ public class StatsServiceTest {
     public void shouldSumMaxMonth() {
 
         StatsService service = new StatsService();
-        int[] maxMonth = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] maxMonth = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 8;
         int actual = service.maxSales(maxMonth);
@@ -48,7 +48,7 @@ public class StatsServiceTest {
     public void shouldSumMinMonth() {
 
         StatsService service = new StatsService();
-        int[] minMonth = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] minMonth = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 9;
         int actual = service.minSales(minMonth);
@@ -62,7 +62,7 @@ public class StatsServiceTest {
     public void shouldAmountMonthUnderAverage() {
 
         StatsService service = new StatsService();
-        int[] amountMonthUnderAverage = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] amountMonthUnderAverage = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 5;
         int actual = service.amountMonthUnderAvg(amountMonthUnderAverage);
@@ -75,7 +75,7 @@ public class StatsServiceTest {
     public void shouldAmountMonthOverAverage() {
 
         StatsService service = new StatsService();
-        int[] amountMonthOverAverage = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] amountMonthOverAverage = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 5;
         int actual = service.amountMonthOverAvg(amountMonthOverAverage);
