@@ -12,7 +12,7 @@ public class StatsServiceTest {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 180;
-        int actual = service.summary(sales);
+        long actual = service.summary(sales);
 
         Assertions.assertEquals(expected, actual);
         System.out.println(actual);
@@ -25,7 +25,7 @@ public class StatsServiceTest {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 15;
-        int actual = service.calcAverage(sales);
+        long actual = service.calcAverage(sales);
 
         Assertions.assertEquals(expected, actual);
         System.out.println(actual);
@@ -38,7 +38,7 @@ public class StatsServiceTest {
         long[] maxMonth = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 8;
-        int actual = service.maxSales(maxMonth);
+        long actual = service.maxSales(maxMonth);
 
         Assertions.assertEquals(expected, actual);
         System.out.println(actual);
@@ -51,7 +51,7 @@ public class StatsServiceTest {
         long[] minMonth = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 9;
-        int actual = service.minSales(minMonth);
+        long actual = service.minSales(minMonth);
 
         Assertions.assertEquals(expected, actual);
         System.out.println(actual);
@@ -65,7 +65,7 @@ public class StatsServiceTest {
         long[] amountMonthUnderAverage = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 5;
-        int actual = service.amountMonthUnderAvg(amountMonthUnderAverage);
+        long actual = service.amountMonthUnderAvg(amountMonthUnderAverage);
 
         Assertions.assertEquals(expected, actual);
         System.out.println(actual);
@@ -78,7 +78,7 @@ public class StatsServiceTest {
         long[] amountMonthOverAverage = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 5;
-        int actual = service.amountMonthOverAvg(amountMonthOverAverage);
+        long actual = service.amountMonthOverAvg(amountMonthOverAverage);
 
         Assertions.assertEquals(expected, actual);
         System.out.println(actual);
